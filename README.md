@@ -1,4 +1,4 @@
-# Car Mechanic Simulator 2021
+# Car Mechanic Simulator 2021 - Automate scrapping
 
 This script automates the scrapping mini-game in CMS 21, utilizing screenshot libraries (pyautogui and mss) and image processing (OpenCV)
 
