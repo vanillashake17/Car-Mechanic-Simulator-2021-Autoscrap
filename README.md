@@ -42,14 +42,6 @@ There are two ways to stop the script:
 - **Round Limit**: You can set a limit for the desired number of rounds on line 46 of the script.
 - **Killswitch**: Press the designated killswitch key (defaults to right-alt) to terminate the script. This can be changed to any valid key on line 55.
 
-## Performance Statistics
+## Video demo on a 2560 * 1440 screen
 
-The script was tested for 50 rounds, three separate times:
-
-| Attempt | Hits | Total | Success Rate |
-|---------|------|-------|-------------|
-| First   | 48   | 50    | 96.00%      |
-| Second  | 50   | 50    | 100.00%     |
-| Third   | 49   | 50    | 98.00%      |
-
-Average success rate: 98.00%
+![Video](https://github.com/user-attachments/assets/5d41ec24-8482-4477-96a1-7a54c19cd544)
