@@ -22,7 +22,7 @@ or
 ```
 cd .\2560by1440\
 ```
-
+![Image](https://github.com/user-attachments/assets/1d9697af-ac52-4d27-af67-5d4825f44705)
 3. Run the script:
 ```
 python main.py
