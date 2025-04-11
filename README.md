@@ -9,24 +9,29 @@ This script automates the scrapping mini-game in CMS 21, utilizing screenshot li
 
 ### Installation
 
-1. Install the required libraries:
+1. Clone the repo
+```
+git clone https://github.com/vanillashake17/cms21scrapping.git
+```   
+
+2. Install the required libraries:
 ```
 pip install pyautogui opencv-python numpy keyboard pygetwindow mss
 ```
 
-2. Navigate to the correct resolution folder:
+3. Navigate to the correct resolution folder:
 ```
-cd .\1920by1080\
+cd .\cms21scrapping\1920by1080\
 ```
 or
 ```
-cd .\2560by1440\
+cd .\cms21scrapping\2560by1440\
 ```
-3. Make sure you are in the mini-game before starting the script as shown below
+4. Make sure you are in the mini-game before starting the script as shown below
    
 ![Image](https://github.com/user-attachments/assets/1d9697af-ac52-4d27-af67-5d4825f44705)
 
-4. Run the script:
+5. Run the script:
 ```
 python main.py
 ```
