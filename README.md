@@ -25,15 +25,11 @@ cd .\2560by1440\
 3. Make sure you are in the mini-game before starting the script as shown below
    
 ![Image](https://github.com/user-attachments/assets/1d9697af-ac52-4d27-af67-5d4825f44705)
-```
+
 4. Run the script:
 ```
 python main.py
 ```
-
-## Usage
-
-The script will run in the background while your game is open. It uses computer vision to detect targets and automate actions.
 
 ### Stopping the Script
 
