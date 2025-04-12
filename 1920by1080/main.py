@@ -45,13 +45,10 @@ print("-" * 30)
 round_no = 0 #tracks the current round number
 limit = 30  #how many rounds we want
 success = 0 #how manu times we hit the cyanblock
-count = 0   #how many iterations it took to complete the round
 with mss.mss() as sct:
     try:
         while True:
-            time_start = time.time()
-            count += 1
-            # --- Check for exit key ---
+            # --- Killswitch ---
             if keyboard.is_pressed('right alt') or round_no >= limit:
                 print("\nExiting loop.")
                 break
@@ -75,9 +72,7 @@ with mss.mss() as sct:
 
                 result = cv2.matchTemplate(img_gray, arrowimg, cv2.TM_CCOEFF_NORMED) # find the arrow in the image
                 min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result) # max_loc is the top-left corner of the best match. It returns in the form of (x,y)
-                time_end = time.time()
-                time_taken = time_end - time_start
-                #print(f"{time_taken*1000} ms") 
+               
                 if max_val >= 0.85:
                     arrow_relative_x = max_loc[0] # arrow_relative_x is the x coordinate of the arrow with respect to the left edge of the barregion
                     arrow_coords = bar_offset_x + arrow_relative_x + (aW//2)  # Center of the arrow in screen coordinates
@@ -108,7 +103,6 @@ with mss.mss() as sct:
                             print(f"Round {round_no} completed. Hit {success} out of {round_no}. Success rate: {float(success)/float(round_no):.2%}")
                             #print (f"{count} iterations required for round {round_no}")
                             print("Waiting for next round...")
-                            count = 0
                         
             else:
                 time.sleep(0.7)
