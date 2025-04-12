@@ -101,7 +101,6 @@ with mss.mss() as sct:
                             is_round_active = False
                             round_no += 1
                             print(f"Round {round_no} completed. Hit {success} out of {round_no}. Success rate: {float(success)/float(round_no):.2%}")
-                            #print (f"{count} iterations required for round {round_no}")
                             print("Waiting for next round...")
                         
             else:
